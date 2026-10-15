@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title> Media</title>
+    </head>
+    <body>
+
+        <h1>Video</h1>
+
+        <video controls width="640"
+            poster="https://placehold.co/640x360?text=Video+Poster">
+            <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+
+            <track src="captions.vtt"
+                kind="captions"
+                srclang="en"
+                label="English">
+
+            <p>Your browser does not support this video. Here is a
+            <a href="https://www.w3schools.com/html/mov_bbb.mp4">link to the video</a> instead.
+            </p>
+        </video>
+
+        <details>
+            <summary>Video Transcript</summary>
+            <p>A small animated scene featuring a big buck bunny and a butterfly.</p>
+        </details>
+
+        <h1>Audio</h1>
+
+        <audio controls>
+            <source src="https://citizen-dj.labs.loc.gov/audio/samplepacks/loc-jukebox-blues/Clarinet-marmalade-blues_jukebox-29613_007_00-02-35.mp3" type="audio/mpeg">
+            <source src="https://citizen-dj.labs.loc.gov/audio/samplepacks/loc-jukebox-blues/Clarinet-marmalade-blues_jukebox-29613_007_00-02-35.mp3" type="audio/ogg">
+
+            <p>Your browser does not support this audio. Here is a
+            <a href="https://citizen-dj.labs.loc.gov/audio/samplepacks/loc-jukebox-blues/Clarinet-marmalade-blues_jukebox-29613_007_00-02-35.mp3">link to the audio</a> instead.
+            </p>
+        </audio>
+
+        <details>
+            <summary>Audio Transcript</summary>
+            <p>Audio transcript will be displayed here.</p>
+        </details>
+
+    </body>
+</html>
