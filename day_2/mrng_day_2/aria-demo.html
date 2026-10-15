@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "UTF-8">
+        <meta name = "viewport" content = "width = device-width, initial-scale = 1.0">
+        <title>ARIA Demo</title>
+    </head>
+    <body>
+        <a href="#main-content" class="skip-link"
+        style="position:absolute; left:-10000px;"
+        onfocus="this.style.left='0';"
+        onblur="this.style.left='-10000px';">
+            Skip to main content
+        </a>
+
+        <div role="search">
+            <input type="search" aria-label="Search">
+        </div>
+
+        <button aria-label="Close menu">X</button>
+
+        <button aria-expanded="false" aria-controls="menu-id">
+            Toggle Menu
+        </button>
+
+        <div id="menu-id" hidden>
+            Menu content
+        </div>
+
+        <div role="alert" aria-live="polite">
+            Notification message
+        </div>
+
+        <main id="main-content">
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" aria-required="true"
+                    aria-describedby="name-help">
+                <p id="name-help">Enter your name.</p>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" aria-required="true"
+                    aria-describedby="email-help">
+                <p id="email-help">Enter your email address.</p>
+
+                <label for="password">Password:</label>
+                <input type="password" id="password" aria-required="true"
+                    aria-describedby="password-help">
+                <p id="password-help">Enter your password.</p>
+            </form>
+        </main>
+    </body>
+</html>

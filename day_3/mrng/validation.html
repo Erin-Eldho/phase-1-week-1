@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>HTML Form Validation</title>
+    </head>
+    <body>
+        <main>
+            <h1>Form Validation</h1>
+
+            <form action="#" method="get">
+                <div>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+
+                <div>
+                    <label for="password">Password:</label>
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        minlength="8"
+                        pattern="(?=.*[0-9]).{8,}"
+                        title="Password must be at least 8 characters long and contain at least one number."
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="age">Age:</label>
+                    <input
+                        type="number"
+                        id="age"
+                        name="age"
+                        min="18"
+                        max="99"
+                        required
+                    >
+                </div>
+
+                <div>
+                    <label for="website">Website URL:</label>
+                    <input type="url" id="website" name="website" required>
+                </div>
+
+                <div>
+                    <label for="dob">Date of Birth:</label>
+                    <input
+                        type="date"
+                        id="dob"
+                        name="dob"
+                        max="2026-10-12"
+                        required
+                    >
+                </div>
+
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </form>
+        </main>
+    </body>
+</html>

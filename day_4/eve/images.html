@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Responsive Images</title>
+    </head>
+    <body>
+
+        <h1>Responsive Images</h1>
+
+        <h2>1. 1st Hero Image</h2>
+        <img
+            srcset="
+                https://picsum.photos/400/200?random=1 400w,
+                https://picsum.photos/800/400?random=1 800w,
+                https://picsum.photos/1200/600?random=1 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            src="https://picsum.photos/800/400?random=1"
+            alt="Hero landscape"
+            loading="eager"
+        >
+
+        <h2>2. Nature</h2>
+        <img
+            src="https://picsum.photos/800/600?random=2"
+            srcset="
+                https://picsum.photos/400/300?random=2 400w,
+                https://picsum.photos/800/600?random=2 800w,
+                https://picsum.photos/1200/900?random=2 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Nature"
+        >
+
+        <h2>3. Architecture</h2>
+        <img
+            src="https://picsum.photos/800/600?random=3"
+            srcset="
+                https://picsum.photos/400/300?random=3 400w,
+                https://picsum.photos/800/600?random=3 800w,
+                https://picsum.photos/1200/900?random=3 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Architecture"
+            loading="lazy"
+        >
+
+        <h2>4. Travel</h2>
+        <img
+            src="https://picsum.photos/800/600?random=4"
+            srcset="
+                https://picsum.photos/400/300?random=4 400w,
+                https://picsum.photos/800/600?random=4 800w,
+                https://picsum.photos/1200/900?random=4 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Travel"
+            loading="lazy"
+        >
+
+        <h2>5. Wildlife</h2>
+        <img
+            src="https://picsum.photos/800/600?random=5"
+            srcset="
+                https://picsum.photos/400/300?random=5 400w,
+                https://picsum.photos/800/600?random=5 800w,
+                https://picsum.photos/1200/900?random=5 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Wildlife"
+            loading="lazy"
+        >
+
+        <h2>6. City</h2>
+        <img
+            src="https://picsum.photos/800/600?random=6"
+            srcset="
+                https://picsum.photos/400/300?random=6 400w,
+                https://picsum.photos/800/600?random=6 800w,
+                https://picsum.photos/1200/900?random=6 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="City"
+        >
+
+        <h2>7. Mountains</h2>
+        <img
+            src="https://picsum.photos/800/600?random=7"
+            srcset="
+                https://picsum.photos/400/300?random=7 400w,
+                https://picsum.photos/800/600?random=7 800w,
+                https://picsum.photos/1200/900?random=7 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Mountains"
+        >
+
+        <h2>8. Ocean</h2>
+        <img
+            src="https://picsum.photos/800/600?random=8"
+            srcset="
+                https://picsum.photos/400/300?random=8 400w,
+                https://picsum.photos/800/600?random=8 800w,
+                https://picsum.photos/1200/900?random=8 1200w
+            "
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 33vw"
+            alt="Ocean"
+            loading="lazy"
+        >
+
+        <h2>9. Art Direction: Wide landscape crop</h2>
+        <picture>
+            <source
+                media="(width > 800px)"
+                srcset="https://picsum.photos/1200/400?random=9"
+            >
+            <img
+                src="https://picsum.photos/400/400?random=9"
+                alt="Wide landscape crop"
+                loading="lazy"
+            >
+        </picture>
+
+        <h2>10. Art Direction: Square crop</h2>
+        <picture>
+            <source
+                media="(width < 800px)"
+                srcset="https://picsum.photos/1200/500?random=10"
+            >
+            <img
+                src="https://picsum.photos/400/400?random=10"
+                alt="Square crop"
+            >
+        </picture>
+
+    </body>
+</html>
